@@ -1,4 +1,4 @@
-# Exploring Typescript
+# Exploring Typescript - https://www.typescriptlang.org/
 
 #### Starting the project
 ```yarn add typescript --dev || npm i typescript -g```
