@@ -130,4 +130,57 @@ PrintMedia2[3];         // returns  Magazine
 
 console.log(PrintMedia2);
 
+/**
+ * Datatype : Union
+ */
+
+let code: (string | number); 
+code = 123;   // valid
+code = "ABC"; // valid
+
+let empId: string | number;
+empId = 111; // valid
+empId = "E111"; // valid
+
+// function with union type
+
+function displayType(code: (string | number))
+{
+    if(typeof(code) === "number")
+        console.log('Code is number.')
+    else if(typeof(code) === "string")
+        console.log('Code is string.')
+}
+
+/**
+ * Datatype : any
+ */
+
+let something: any = "Hello World!"; 
+something = 23; // valid
+something = true; // valid 
+
+let arr: any[] = ["John", 212, true]; 
+arr.push("Smith"); 
+console.log(arr); //Output: [ 'John', 212, true, 'Smith' ] 
+
+/**
+ * Datatype : Void
+ */
+
+function sayHi(): void { 
+    console.log('Hi!')
+} 
+
+let speech: void = sayHi(); 
+console.log(speech); //Output: undefined
+
+/**
+ * Datatype : Never
+ */
+
+// used when we know if a function will never return anything or values never going to occur. 
+function throwError(errorMsg: string): never { 
+    throw new Error(errorMsg); 
+} 
 

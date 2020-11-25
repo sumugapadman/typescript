@@ -77,5 +77,31 @@ PrintMedia2.Magazine;
 PrintMedia2["Magazine"];
 PrintMedia2[3];
 console.log(PrintMedia2);
+let code;
+code = 123;
+code = "ABC";
+let empId;
+empId = 111;
+empId = "E111";
+function displayType(code) {
+    if (typeof (code) === "number")
+        console.log('Code is number.');
+    else if (typeof (code) === "string")
+        console.log('Code is string.');
+}
+let something = "Hello World!";
+something = 23;
+something = true;
+let arr = ["John", 212, true];
+arr.push("Smith");
+console.log(arr);
+function sayHi() {
+    console.log('Hi!');
+}
+let speech = sayHi();
+console.log(speech);
+function throwError(errorMsg) {
+    throw new Error(errorMsg);
+}
 console.log('hello world');
 //# sourceMappingURL=ts.js.map
