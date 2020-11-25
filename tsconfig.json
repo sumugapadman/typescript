@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "ES2018",
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outFile": "./build/ts.js",
+    "sourceRoot": "./src/",
+    "rootDir": "./src/",
+    "sourceMap": true
+  },
+  "include": [ "src/**/*"],
+  "exclude": [
+    "node_modules"
+  ]
+}
