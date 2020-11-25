@@ -13,6 +13,42 @@ let employeefirstName = 'John';
 let employeelastName = 'Doe';
 let employeesurName = 'Mr';
 const num = 100;
+let messsage;
+let input;
+input = 100;
+input = 'Hi';
+let click;
+click = 'click';
+let mouseEvent;
+mouseEvent = 'click';
+mouseEvent = 'dblclick';
+mouseEvent = 'mouseup';
+mouseEvent = 'mousedown';
+var allowedEvents;
+(function (allowedEvents) {
+    allowedEvents[allowedEvents["click"] = 0] = "click";
+    allowedEvents[allowedEvents["dblclick"] = 1] = "dblclick";
+    allowedEvents[allowedEvents["mouseup"] = 2] = "mouseup";
+    allowedEvents[allowedEvents["mousedown"] = 3] = "mousedown";
+})(allowedEvents || (allowedEvents = {}));
+let myEvent;
+myEvent = allowedEvents.click;
+myEvent = allowedEvents.mousedown;
+let anotherEvent;
+anotherEvent = allowedEvents.mouseup;
+let counter;
+let counter1 = 0;
+let counters = 0;
+function increment(counter) {
+    return counter++;
+}
+function incrementer(counter) {
+    return counter++;
+}
+let myarr = [new Date(), new RegExp('\d+')];
+document.addEventListener('click', function (event) {
+    console.log(event.button);
+});
 let first = 123;
 let second = 0x37CF;
 let third = 0o377;
