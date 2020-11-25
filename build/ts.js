@@ -13,6 +13,81 @@ let employeefirstName = 'John';
 let employeelastName = 'Doe';
 let employeesurName = 'Mr';
 const num = 100;
+let discount;
+let itemCount = 11;
+if (itemCount > 0 && itemCount <= 5) {
+    discount = 5;
+}
+else if (itemCount > 5 && itemCount <= 10) {
+    discount = 10;
+}
+else if (discount > 10) {
+    discount = 15;
+}
+else {
+    throw new Error('The number of items cannot be negative!');
+}
+console.log(`You got ${discount}% discount. `);
+let targetId = 'btnDelete';
+switch (targetId) {
+    case 'btnUpdate':
+        console.log('Update');
+        break;
+    case 'btnDelete':
+        console.log('Delete');
+        break;
+    case 'btnNew':
+        console.log('New');
+        break;
+}
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+}
+let i = 0;
+for (; i < 10; i++) {
+    console.log(i);
+}
+for (let i = 0;; i++) {
+    console.log(i);
+    if (i > 9)
+        break;
+}
+let j = 0;
+for (;;) {
+    console.log(j);
+    j++;
+    if (j > 9)
+        break;
+}
+let wcounter = 0;
+while (wcounter < 5) {
+    console.log(wcounter);
+    wcounter++;
+}
+let list = document.querySelector('#list');
+while (list.firstChild) {
+    list.removeChild(list.firstChild);
+}
+let ix = 0;
+do {
+    console.log(ix);
+    ix++;
+} while (ix < 10);
+let products = [
+    { name: 'phone', price: 700 },
+    { name: 'tablet', price: 900 },
+    { name: 'laptop', price: 1200 }
+];
+for (var xi = 0; xi < products.length; xi++) {
+    if (products[xi].price == 900)
+        break;
+}
+console.log(products[xi]);
+for (let index = 0; index < 9; index++) {
+    if (index % 2)
+        continue;
+    console.log(index);
+}
 let messsage;
 let input;
 input = 100;
