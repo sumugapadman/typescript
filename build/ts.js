@@ -214,5 +214,69 @@ console.log(speech);
 function throwError(errorMsg) {
     throw new Error(errorMsg);
 }
+function add(a, b) {
+    return a + b;
+}
+function echo(message) {
+    console.log(message.toUpperCase());
+}
+let adds;
+adds = function (x, y) {
+    return x + y;
+};
+let addition = function (x, y) {
+    return x + y;
+};
+let addd = function (x, y) {
+    return x + y;
+};
+function mutliply(a, b, c) {
+    if (typeof c !== undefined) {
+        return a * b * c;
+    }
+    return a * b;
+}
+function sampleName(price, discount = 0.5) {
+    return price * (1 - discount);
+}
+function applyDiscount(price, discount = 0.05) {
+    return price * (1 - discount);
+}
+function getTotal(...numbers) {
+    let total = 0;
+    numbers.forEach((num) => total += num);
+    return total;
+}
+function addNumbers(a, b) {
+    return a + b;
+}
+function addStrings(a, b) {
+    return a + b;
+}
+function custadd(a, b) {
+    if (typeof a === 'number' && typeof b === 'number')
+        return a + b;
+    if (typeof a === 'string' && typeof b === 'string')
+        return a + b;
+}
+function custadd1(a, b) {
+    return a + b;
+}
+class Counter {
+    constructor() {
+        this.current = 0;
+    }
+    count(target) {
+        if (target) {
+            let values = [];
+            for (let start = this.current; start <= target; start++) {
+                values.push(start);
+            }
+            this.current = target;
+            return values;
+        }
+        return ++this.current;
+    }
+}
 console.log('hello world');
 //# sourceMappingURL=ts.js.map
