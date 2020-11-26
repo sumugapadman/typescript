@@ -11,3 +11,6 @@ tsc init // generates tsconfig.json
 
 ```tsc -p tsconfig.json```
 
+#### Running Typescript build
+```node build/ts.js```
+
